@@ -42,11 +42,5 @@ class ArticleModel (
     fun set_maxNum(maxNum: Int){
         this.maxNum = maxNum
     }
-    fun set_title(title: String){
-        this.title = title
-    }
-    fun set_content(content: String){
-        this.content = content
-    }
 }
 

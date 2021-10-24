@@ -5,39 +5,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditArticleFragment"
-    android:background="@color/white"
+    android:background="@color/background"
     android:clickable="true">
 
 
     <ImageView
         android:id="@+id/UserProfileImageView_edit"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="101dp"
+        android:layout_height="110dp"
         android:layout_marginStart="20dp"
-        app:srcCompat="@drawable/ic_baseline_person_24"
-        />
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_article_text"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
 
     <TextView
         android:id="@+id/userIDTextView_edit"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
-        android:layout_marginTop="30dp"
+        android:layout_width="274dp"
+        android:layout_height="35dp"
         android:layout_marginStart="123dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/bmjua_ttf"
         android:text="Charlie"
-        android:textStyle="bold"
-        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textSize="27dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="267dp"
+        android:layout_height="2dp"
+        android:background="@color/stroke"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="10dp"
         />
+
 
     <TextView
         android:id="@+id/userProfileTextView_edit"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="273dp"
+        android:layout_height="63dp"
         android:layout_marginStart="125dp"
+        android:layout_marginTop="67dp"
         android:layout_marginEnd="40dp"
+        android:fontFamily="@font/bmjua_ttf"
         android:text="저는 미래관에 사는 야채곱창을 좋아하는 화석입니다."
-        android:textSize="14dp"
+        android:textSize="22dp"
+        />
+
+    <View
+        android:layout_width="267dp"
+        android:layout_height="2dp"
+        android:background="@color/stroke"
+        android:layout_marginStart="123dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="10dp"
         />
 
     <EditText
@@ -46,63 +67,73 @@
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="120dp"
-        android:hint="제목"
+        android:layout_marginTop="150dp"
+        android:hint="방 제목"
         android:inputType="text"
         android:textSize="24dp"
         android:textStyle="bold"
+        android:textAlignment="center"
+        android:fontFamily="@font/bmjua_ttf"
+        android:background="@drawable/edit_article_text"
         />
+
+    <!--    ToDo: spinner로 모집 수 지정하기  -->
 
     <EditText
         android:id="@+id/contentTextView_edit"
         android:layout_width="match_parent"
         android:layout_height="230dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="167dp"
         android:layout_gravity="top"
-        android:maxLength="350"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/bmjua_ttf"
+        android:hint="음식 종류/ 모집 내용을 적어주세요"
         android:inputType="textMultiLine"
         android:lines="5"
+        android:maxLength="350"
         android:scrollHorizontally="false"
-        android:textSize="17dp"
-        android:hint="내용"
-        />
+        android:background="@drawable/edit_article_text"
+        android:textSize="17dp" />
 
     <TextView
         android:id="@+id/recruitTextView_edit"
-        android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_width="171dp"
+        android:layout_height="50dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="530dp"
         android:layout_marginEnd="20dp"
-        android:text="현재 모집 현황 : "
-        android:textSize="20dp"
+        android:text="     목표 인원"
+        android:textSize="30dp"
+        android:fontFamily="@font/bmjua_ttf"
         android:textStyle="bold" />
 
-<!--    ToDo: spinner로 모집 수 지정하기  -->
     <TextView
         android:id="@+id/userNumberTextView_edit"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="50dp"
         android:layout_marginStart="200dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="420dp"
-        android:text="1 / 4 "
-        android:textSize="20dp"
+       android:layout_marginEnd="20dp"
+        android:layout_marginTop="530dp"
+        android:text=" 4 명"
+        android:textSize="30dp"
         android:textStyle="bold"
+        android:fontFamily="@font/bmjua_ttf"
         />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/buttonSubmit_edit"
-        android:layout_width="370dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="470dp"
-        android:layout_marginEnd="20dp"
-        android:text="작성하기"
-        android:textSize="20dp"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:background="@drawable/button"
+        android:layout_marginTop="620dp"
+        android:layout_marginLeft="30dp"
+        android:text="작  성  하  기"
+        android:textColor="#FFFFFF"
+        android:textSize="37sp"
         android:textStyle="bold"
+        android:fontFamily="@font/bmjua_ttf"
+        app:srcCompat="@drawable/ic_baseline_fastfood_24"
         />
 
 </FrameLayout>

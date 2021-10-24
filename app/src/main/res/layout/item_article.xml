@@ -6,7 +6,7 @@
     android:paddingHorizontal="20dp"
     android:paddingVertical="10dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@color/purple_200"
+    android:background="@color/background"
     >
 
 
@@ -15,7 +15,6 @@
         android:layout_width="110dp"
         android:layout_height="110dp"
         android:layout_marginBottom="16dp"
-        android:background="#F8F6F6"
         android:scaleType="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -23,19 +22,24 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/ic_baseline_fastfood_24" />
+        app:srcCompat="@drawable/ic_baseline_fastfood_24"
+        android:background="@drawable/edit_article_text"/>
 
     <TextView
         android:id="@+id/titleTextView"
-        android:layout_width="219dp"
-        android:layout_height="28dp"
+        style=""
+        android:layout_width="225dp"
+        android:layout_height="27dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/edit_article_text"
+        android:fontFamily="@font/bmjua_ttf"
         android:maxLength="15"
         android:singleLine="true"
         android:text="제목"
-        android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="#757575"
+        android:textSize="23sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -46,35 +50,38 @@
     <TextView
         android:id="@+id/contentTextView"
         android:layout_width="224dp"
-        android:layout_height="48dp"
+        android:layout_height="43dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="8dp"
         android:maxLength="44"
         android:singleLine="false"
         android:text="내용"
-        android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textColor="#757575"
+        android:textSize="23sp"
+        android:textAlignment="center"
+        android:fontFamily="@font/bmjua_ttf"
         app:layout_constraintBottom_toTopOf="@+id/numTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/thumbnailImageView"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView"
         app:layout_constraintVertical_bias="0.136"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/edit_article_text"/>
 
     <TextView
         android:id="@+id/numTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/bmjua_ttf"
         android:text="curNum / maxNum"
-        android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintHorizontal_bias="0.898"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.983" />
+        app:layout_constraintVertical_bias="0.875" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
